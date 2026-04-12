@@ -44,3 +44,9 @@ pnpm run dev
 2. 热模块替换（HMR）
 3. 路径重写（如 Vue Router 的 history 模式 fallback）
 4. 代理 API 请求等
+
+## 服务预览
+```bash
+pnpm preview
+```
+与 `pnpm run dev` 不同的是， `pnpm preview` 启动的服务会经过完整的打包过程，对浏览器的响应会快很多
