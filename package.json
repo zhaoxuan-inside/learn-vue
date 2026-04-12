@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "pinia": "^3.0.4",
+    "pnpm": "^10.33.0",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4"
   },
