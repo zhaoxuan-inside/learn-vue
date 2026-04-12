@@ -35,7 +35,12 @@ pnpm build
 注意：打包的结果放在 `dist` 目录下
 
 ## 启动前端服务
-根据 `package.json` 文件脚本中的 `dev` 脚本名执行对应的命令，一般都是用来启动 web 服务
+根据 `package.json` 文件脚本中的 `dev` 脚本名执行对应的命令，一般都是用来启动 web 服务器
 ```bash
 pnpm run dev
 ```
+注意：启动的 web 服务器是一个专为开发环境设计的 HTTP 服务器，已经具备以下功能：
+1. 提供静态文件访问
+2. 热模块替换（HMR）
+3. 路径重写（如 Vue Router 的 history 模式 fallback）
+4. 代理 API 请求等
