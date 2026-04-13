@@ -18,8 +18,8 @@ pnpm install --save-dev prettier
 ## 插件推荐
 1. Version lens
 2. Total TypeScript
-3. Vetur
-4. 
+3. Volur
+
 ## 组建说明
 ### 
 
