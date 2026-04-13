@@ -10,6 +10,11 @@ npm install pnpm latest -g
 pnpm create vite basic --template vue-ts
 ```
 
+安装代码格式管理插件
+```bash
+pnpm install --save-dev prettier
+```
+
 ## 插件推荐
 1. Version lens
 2. Total TypeScript
