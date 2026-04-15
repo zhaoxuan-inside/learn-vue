@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DefindVar from './components/_000_define_var.vue'
-import Sytle from './components/_001_comp_opt.vue'
+import Sytle from './components/_001_programe_style.vue'
 </script>
 
 <template>
