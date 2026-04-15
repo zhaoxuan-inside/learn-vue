@@ -1,10 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import viteLogo from '../assets/vite.svg'
-import heroImg from '../assets/hero.png'
-import vueLogo from '../assets/vue.svg'
+import { ref } from "vue";
+import viteLogo from "../assets/vite.svg";
+import heroImg from "../assets/hero.png";
+import vueLogo from "../assets/vue.svg";
 
-const count = ref(0)
+const count = ref(0);
+
+const isOpen = ref<Boolean>(false);
+
+// 宏定义
+defineProps<{ name: String; age: Number }>();
 </script>
 
 <template>
@@ -19,6 +24,10 @@ const count = ref(0)
       <p>Edit <code>src/App.vue</code> and save to test <code>HMR</code></p>
     </div>
     <button class="counter" @click="count++">Count is {{ count }}</button>
+
+    <div class="card" @click="isOpen = !isOpen">
+      {{ isOpen ? "打开" : "关闭" }}
+    </div>
   </section>
 
   <div class="ticks"></div>
