@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import DefindVar from './components/_000_define_var.vue'
+import Sytle from './components/_001_comp_opt.vue'
 </script>
 
 <template>
-  <HelloWorld :name="'zhangsan'" , :age="18" />
+    <DefindVar />
+    <Sytle />
 </template>
