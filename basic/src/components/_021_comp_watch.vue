@@ -7,6 +7,14 @@ const sum = computed(() => {
     return Number(num_1.value) + Number(num_2.value)
 })
 
+watch([num_1, num_2], (o, n) => {
+    console.log(typeof n)
+    if (typeof n != 'number' || typeof n != 'number') {
+        console.log('invalid param')
+        alert('invalid param')
+    }
+})
+
 watch([sum], (o, n) => {
     console.log('old: ' + o)
     console.log('new: ' + n)
