@@ -10,3 +10,5 @@ const count = ref(0)
         <button class="counter" @click="count++">{{ count }}</button>
     </section>
 </template>
+
+<style></style>
