@@ -10,15 +10,19 @@ import { ref } from 'vue'
 const mount = ref(true)
 
 const name = ref('zhangsan')
-const age = ref(18)
 
-function showUpdate(content: Number | String | undefined) {
-    console.log('content: ' + content)
+const tmp = ref()
+
+function rewrite(content: Number | String | undefined) {
+    // Component-4. 将接收到的数据写入 tmp 暂存区
+    tmp.value = content
 }
 </script>
 
 <template>
-    <Component :name="name" :age="age" @update="showUpdate" />
+    <!-- Component-3. 父节点接收到已经绑定的 emites 产生的 update 事件，触发 rewrite 方法 -->
+    <!-- Component-5. tmp 暂存区变更响应式触发 age 变化 -->
+    <Component :name="name" :age="tmp" @update="rewrite" />
     <DefindVar />
     <Sytle />
     <Composite />
