@@ -28,12 +28,12 @@ function function_1() {
 }
 
 function function_2(newName: string) {
-    console.log('super trigger function2', name: ' + name)
+    console.log('super trigger function2, name: ' + name)
     name.value = newName
 }
 
 function function_3(newName: string, newAge: number) {
-    console.log('super trigger function3', name: ' + name + ', age: ' + age)
+    console.log('super trigger function3, name: ' + name + ', age: ' + age)
     name.value = newName
     age.value = newAge
 }
