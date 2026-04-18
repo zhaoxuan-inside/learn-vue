@@ -6,10 +6,10 @@ import vueLogo from "../assets/vue.svg";
 
 const count = ref(0);
 
-const isOpen = ref<Boolean>(false);
+const isOpen = ref<boolean>(false);
 
 // 宏定义
-defineProps<{ name: String; age: Number }>();
+defineProps<{ name: string; age: number }>();
 </script>
 
 <template>
