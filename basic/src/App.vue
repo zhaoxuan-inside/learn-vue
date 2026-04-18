@@ -8,6 +8,8 @@ import Component from './components/_040_transmission_c2f.vue'
 // Transmission-1: 祖组件引入父组件
 import Transmission from './components/_041_transmission_father.vue'
 import Provide from './components/_043_transmission_provide.vue'
+import Im1 from './components/_044_mitt_1.vue'
+import Im2 from './components/_044_mitt_2.vue'
 
 import { ref } from 'vue'
 const mount = ref(true)
@@ -42,6 +44,10 @@ function function_3(newName: string, newAge: number) {
 </script>
 
 <template>
+
+    <Im1/>
+    </br>
+    <Im2/>
 
     <Provide />
 
