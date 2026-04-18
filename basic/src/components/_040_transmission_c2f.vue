@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps<{ name: string; age: number }>()
+const props = defineProps<{ name: string; age: number | undefined }>()
 const emits = defineEmits<{
     change: []
     update: [value: number | string | undefined]

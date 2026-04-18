@@ -23,7 +23,7 @@ pnpm install --save-dev prettier
 
 1. Version lens
 2. Total TypeScript
-3. Volur
+3. Volar
 
 ## 组建说明
 

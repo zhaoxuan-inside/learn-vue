@@ -7,6 +7,7 @@ import Lifecycle from './components/_030_lifecycle.vue'
 import Component from './components/_040_transmission_c2f.vue'
 // Transmission-1: 祖组件引入父组件
 import Transmission from './components/_041_transmission_father.vue'
+import Provide from './components/_043_transmission_provide.vue'
 
 import { ref } from 'vue'
 const mount = ref(true)
@@ -42,9 +43,11 @@ function function_3(newName: string, newAge: number) {
 
 <template>
 
-    // Transmission-6: 祖组件定义传输数据的结构的绑定关系
-    // Transmission-7: 祖组件定义事件回传的接口，以及接口绑定的function
-    // Transmission-13: 对接收到的父组件的信息根据绑定关系调用function
+    <Provide />
+
+    <!-- Transmission-6: 祖组件定义传输数据的解构的绑定关系 -->
+    <!-- Transmission-7: 祖组件事件回传的接口，以及接口绑定的funcion -->
+    <!-- Transmission-13: 对接收到的父组件的信息根据绑定关系调用function -->
     <Transmission :name="name" :age="age" @function_1="function_1" @function_2="function_2" @function_3="function_3"/>
 
     <!-- Component-3. 父节点接收到已经绑定的 emites 产生的 update 事件，触发 rewrite 方法 -->
