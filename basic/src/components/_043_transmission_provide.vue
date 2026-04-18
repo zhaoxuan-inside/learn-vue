@@ -3,7 +3,9 @@ import Inject from './_043_transmission_inject.vue'
 
 import { provide, ref } from 'vue';
 
+// provice-inject-1: 创建响应式对象
 const single = ref(true);
+// provice-inject-2: 存放对象
 provide('single', single);
 </script>
 
