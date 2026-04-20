@@ -4,14 +4,14 @@ import Slot from './_050_slot.vue';
 
 <template>
     <Slot>
-        <template #header>
-            <div>Header</div>
+        <template #header="data">
+            <div>Header{{ data.content }}</div>
         </template>
 
         <div>Content</div>
 
-        <template #footer>
-            <div>Footer</div>
+        <template #footer="info">
+            <div>Footer {{ info.content }}</div>
         </template>
     </Slot>
 </template>
