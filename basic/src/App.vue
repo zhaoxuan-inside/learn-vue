@@ -11,6 +11,8 @@ import Provide from './components/_043_transmission_provide.vue'
 import Im1 from './components/_044_mitt_1.vue'
 import Im2 from './components/_044_mitt_2.vue'
 
+import Slot from './components/_050_slot_wrapper.vue'
+
 import { ref } from 'vue'
 const mount = ref(true)
 
@@ -44,6 +46,8 @@ function function_3(newName: string, newAge: number) {
 </script>
 
 <template>
+
+    <Slot/>
 
     <Im1/>
     </br>
