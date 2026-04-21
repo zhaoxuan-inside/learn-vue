@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// Dynamic-1: 引用 h 函数
 import { h } from 'vue';
 
 const datas = [
@@ -8,6 +9,7 @@ const datas = [
     { type: 'video', content: '猫鼠游戏' },
 ];
 
+// Dynamic-2: 定义 h 函数封装的元素
 const render = (type: string, content: string) => {
     switch (type) {
         case 'text':
@@ -20,6 +22,7 @@ const render = (type: string, content: string) => {
 
 <template>
     <div v-for="data in datas">
+        <!-- Dynamic-3: 定义组件占位符，并绑定 h 函数 -->
         <component :is="render(data.type, data.content)" />
     </div>
 </template>
