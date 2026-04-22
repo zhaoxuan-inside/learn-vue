@@ -16,5 +16,21 @@ const router = createRouter({
     routes,
 });
 
+// 全局路由守卫
+// 执行顺序：1
+router.beforeEach((to, from) => {
+    console.log('beforeEach', to, from);
+});
+
+// 执行顺序：2
+router.beforeResolve((gard) => {
+    console.log('beforeResolve', gard);
+});
+
+// 执行顺序：3
+router.afterEach((gard) => {
+    console.log('afterEach', gard);
+});
+
 // Router-4: 将路由对象公布出去
 export default router;
