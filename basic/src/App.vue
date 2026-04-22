@@ -47,6 +47,9 @@ function function_3(newName: string, newAge: number) {
 </script>
 
 <template>
+    <!-- Router-6: 展示这个路由的信息 -->
+    <RouterView />
+
     <Dyanmic />
 
     <Slot />

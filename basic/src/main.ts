@@ -1,5 +1,9 @@
-import { createApp } from "vue";
-import "./style.css";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import './style.css';
+import App from './App.vue';
+import router from './components/router/_070_index';
 
-createApp(App).mount("#app");
+const app = createApp(App);
+// Router-5: 使用指定的路由
+app.use(router);
+app.mount('#app');
