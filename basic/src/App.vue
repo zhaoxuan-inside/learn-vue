@@ -15,6 +15,7 @@ import Slot from './components/_050_slot_wrapper.vue';
 
 import Dyanmic from './components/_060_dynamic.vue';
 import JumpEvent from './components/_071_jump_event.vue';
+import State from './components/_080_state_usage.vue';
 
 import { ref } from 'vue';
 const mount = ref(true);
@@ -48,6 +49,8 @@ function function_3(newName: string, newAge: number) {
 </script>
 
 <template>
+    <State />
+
     <JumpEvent />
 
     <!-- Router-6: 展示这个路由的信息 -->
