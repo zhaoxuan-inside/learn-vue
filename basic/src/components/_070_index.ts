@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Router-1: 导入需要路由的 page
-import home from '../_070_router_page/_070_home_page.vue';
-import about from '../_070_router_page/_070_about_page.vue';
+import home from './_070_home_page.vue';
+import about from './_070_about_page.vue';
 
 // Router-2: 定义路由的地址和需要路由的 page 的绑定关系
 const routes = [
