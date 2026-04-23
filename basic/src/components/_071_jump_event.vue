@@ -6,5 +6,5 @@ const router = useRouter();
 
 <template>
     Basic
-    <button @click="router.push('/about')">JUMP</button>
+    <button @click="router.push({ path: '/about', query: { name: 'zhangsan' } })">JUMP</button>
 </template>
