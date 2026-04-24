@@ -83,3 +83,19 @@ pnpm preview
 # node --experimental-strip-types [script_file_name]
 node --experimental-strip-types _003_type_protect.ts
 ```
+
+# 消息传输
+
+## 安装 mitt
+
+```bash
+pnpm install mitt
+```
+
+# 状态管理
+
+## 安装 pinia
+
+```bash
+pnpm install pinia
+```
