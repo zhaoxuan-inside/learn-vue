@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-})
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(path) {
+          if (path.includes("node_modules/vue")) {
+            return "vue";
+          }
+        },
+      },
+    },
+  },
+});
