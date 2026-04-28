@@ -1,3 +1,4 @@
+import { defineAsyncComponent } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const rs = [
@@ -9,7 +10,8 @@ const rs = [
   {
     path: "/task/:id",
     name: "Task",
-    component: () => import("../pages/Task/index.vue"),
+    // 异步按需加载
+    component: defineAsyncComponent(() => import("../pages/Task/index.vue")),
   },
 ];
 
