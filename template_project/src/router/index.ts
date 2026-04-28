@@ -4,7 +4,7 @@ const rs = [
   {
     path: "/",
     name: "Tasks",
-    component: () => import("../pages/Tasks/index.vue"),
+    component: () => import("../pages/Tasks/index_pinia.vue"),
   },
   {
     path: "/task/:id",
