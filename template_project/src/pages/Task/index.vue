@@ -2,6 +2,7 @@
 import { CurrentTask } from "../../composible/current_task";
 
 function getContent(id: number) {
+  console.log("log");
   const currentTask = CurrentTask(id);
   return currentTask?.name;
 }
