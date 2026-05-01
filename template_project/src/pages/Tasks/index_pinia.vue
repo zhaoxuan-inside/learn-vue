@@ -13,7 +13,6 @@ function addTask() {
     content = ele.value;
     inputRef.value = null;
   }
-
   taskStore.addTask(content);
 }
 </script>
